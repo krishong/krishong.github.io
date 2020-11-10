@@ -1,0 +1,14 @@
+---
+layout: base
+---
+
+{% include header.html type="page" %}
+
+<div class="container-fluid" role="main">  <!-- container-fluid spans whole page -->
+  <div class="row justify-content-center">  <!-- centre the body --> 
+    <div class="col-xl-8 offset-xl-0">  <!-- change to control body width -->
+      {{ content }}
+      {% include comments.html %}
+    </div>
+  </div>
+</div>
